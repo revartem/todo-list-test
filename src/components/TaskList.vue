@@ -44,25 +44,22 @@
                         </div>
                     </div>
                 </div>
-                <md-card-header>
-                    <div class="md-title">Tasks</div>
-                    </md-card-header>
                 <md-card-content>
                     <div>
                         <md-table v-model="searched" md-sort="title" md-sort-order="asc" md-card md-fixed-header>
                             <md-table-toolbar>
                                 <div class="md-toolbar-section-start">
-                                    <h1 class="md-title">Users</h1>
+                                    <h1 class="md-title">TODOS</h1>
                                 </div>
 
                                 <md-field md-clearable class="md-toolbar-section-end">
-                                    <md-input placeholder="Search by name..." v-model="search" />
+                                    <md-input placeholder="Search..." v-model="search" />
                                 </md-field>
                             </md-table-toolbar>
 
                             <md-table-empty-state
                                     md-label="No users found"
-                                    :md-description="`No user found for this '${search}' query. Try a different search term or create a new user.`">
+                                    :md-description="`No TODOS found for this '${search}' query. Try a different search term or create a new user.`">
 
                             </md-table-empty-state>
 
